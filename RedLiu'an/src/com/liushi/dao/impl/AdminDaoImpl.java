@@ -7,6 +7,8 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
+import java.util.List;
+
 /**
  * @ClassName AdminDaoImpl
  * @Description TODO
@@ -28,5 +30,11 @@ public class AdminDaoImpl implements AdminDao {
             e.printStackTrace();
             return null;
         }
+    }
+
+    @Override
+    public List<Admin> findAll() {
+        String sql="select * from admin";
+        return jdbcTemplate.query(sql, new BeanPropertyRowMapper<Admin>(Admin.class));
     }
 }

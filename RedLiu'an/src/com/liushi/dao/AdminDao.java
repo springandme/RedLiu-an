@@ -2,6 +2,8 @@ package com.liushi.dao;
 
 import com.liushi.domain.Admin;
 
+import java.util.List;
+
 /**
  * @ClassName AdminDao
  * @Description TODO
@@ -12,5 +14,7 @@ import com.liushi.domain.Admin;
 public interface AdminDao {
 
     Admin findUsernameAndPassword(String username,String password) throws Exception;
+
+    List<Admin> findAll();
 
 }
