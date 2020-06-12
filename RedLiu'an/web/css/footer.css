@@ -1,0 +1,25 @@
+
+.page-foot {
+    background-color: #202020;
+    height:360px;
+    width:100%;
+    position:relative;
+}
+.foot-other-link {
+    height: 20px;
+    margin-top: 20px;
+    text-align: center;
+    position:relative;
+}
+.foot-other-link > li {
+    display:inline-block;
+    margin-left:20px;
+    font-size:15px;
+    color:#9EAFC0;
+}
+.foot-Copyright {
+    text-align:center;
+    font-size:13px;
+    color:#2c3e50;
+}
+

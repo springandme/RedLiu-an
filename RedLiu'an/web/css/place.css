@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+	*{
+		padding: 0px;
+		margin: 0px;
+	}
+	
+	
+
+	.full_width {
+    	height: 196px;
+    	background-color: rgb(204, 0, 0,1.00);
+    	background-position: center top;
+    	background-repeat: no-repeat;
+    	background-image: url("../Image/top-1.jpg");
+	}
+
+	.head_content{
+		height: 100%;
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	.wp-title_content {
+    	font-size: 12px;
+    	line-height: 140%;
+	}
+	
+	.Nav_ul{
+		list-style: none;
+	}
+	
+	.Nav_ul li
+	{
+		float:left;
+		height: 100%;
+		width: 12%;
+		line-height: 45px;
+		margin-left: 5px;
+	}
+	
+	.Nav_ul a:link,a:visited
+	{
+		display:block;
+		width:120px;
+		font-weight:bold;
+		font-size: 15px;
+		font-family: '微软雅黑';
+		color:rgba(247,229,133,1.00);
+		text-align:center;
+		text-decoration:none;
+	}
+	
+	.Nav_ul>li>a:hover,a:active
+	{
+		background-color:rgba(176,0,0,1.00);
+	}
+	
+	.page-foot {
+        background-color: rgba(32,32,32,1.00);
+        height:360px;
+        width:100%;
+		position:relative;
+    }
+    .foot-other-link {
+    	height: 20px;
+    	margin-top: 20px;
+    	text-align: center;
+		position:relative;
+    }
+
+    .font-right-link{
+        height: 20px;
+        margin-top: 20px;
+        margin-right: auto;
+        position:relative;
+    }
+    .foot-other-link > li {
+        display:inline-block;
+        margin-left:20px;
+        font-size:15px;
+        color:#9EAFC0;
+    }
+    .foot-Copyright {
+        text-align:center;
+        font-size:13px;
+        color:#2c3e50;
+    }

@@ -1,0 +1,18 @@
+@charset "UTF-8";
+    form{
+        height:500px;
+        width:500px;
+        margin: 0 auto;
+    }
+    #submit{
+        margin-left:150px;
+    }
+    .font{
+         width: 200px;
+         margin: 0 auto; 
+         margin-top: 150px;
+    }
+    h4{
+       color:skyblue;
+       font-size:25px;
+    }
