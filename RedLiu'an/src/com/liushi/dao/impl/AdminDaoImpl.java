@@ -37,4 +37,16 @@ public class AdminDaoImpl implements AdminDao {
         String sql="select * from admin";
         return jdbcTemplate.query(sql, new BeanPropertyRowMapper<Admin>(Admin.class));
     }
+
+    @Override
+    public Admin findOne(String name) {
+        try {
+            String sql="select * from admin where name = ?";
+            Admin admin = jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<Admin>(Admin.class), name);
+            return admin;
+        } catch (DataAccessException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
 }
